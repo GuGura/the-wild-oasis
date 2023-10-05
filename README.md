@@ -27,6 +27,10 @@ npm install @supabase/supabase-js
 
 ### React-query
 ```
-npm i @tanstack/react-query
+npm i @tanstack/react-query @tanstack/react-query-devtools
 ```
 
+### Date-fns
+```
+npm i date-fns
+```
