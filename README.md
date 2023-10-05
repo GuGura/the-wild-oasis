@@ -34,3 +34,8 @@ npm i @tanstack/react-query @tanstack/react-query-devtools
 ```
 npm i date-fns
 ```
+
+### React-hot-toast
+```
+npm i react-hot-toast
+```
