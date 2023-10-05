@@ -24,3 +24,9 @@ npm i react-router-dom
 ```
 npm install @supabase/supabase-js
 ```
+
+### React-query
+```
+npm i @tanstack/react-query
+```
+
