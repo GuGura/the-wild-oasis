@@ -9,3 +9,13 @@ npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
 ```
 npm i styled-components
 ```
+
+### React-router-dom
+```
+npm i react-router-dom
+```
+
+### React-icons
+```
+ npm i react-icons
+```
