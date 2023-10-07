@@ -39,3 +39,8 @@ npm i date-fns
 ```
 npm i react-hot-toast
 ```
+
+### React-hook-form 
+```
+ npm i react-hook-form
+```
