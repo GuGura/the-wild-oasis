@@ -88,7 +88,7 @@ function BookingRow({
                 <Menus.Toggle id={bookingId}/>
                 <Menus.List id={bookingId}>
                     <Menus.Button icon={<HiEye/>}
-                                  onClick={()=>navigate(`/bookings/${bookingId}`)}>See details</Menus.Button>
+                                  onClick={() => navigate(`/bookings/${bookingId}`)}>See details</Menus.Button>
                 </Menus.List>
             </Menus.Menu>
         </Table.Row>
