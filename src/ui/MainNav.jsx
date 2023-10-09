@@ -66,7 +66,7 @@ function MainNav() {
                     </StyledNavLink>
                 </li>
                 <li>
-                    <StyledNavLink to='/booking'>
+                    <StyledNavLink to='/bookings'>
                         <HiOutlineCalculator/>
                         <span>Bookings</span>
                     </StyledNavLink>
