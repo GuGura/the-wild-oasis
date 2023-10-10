@@ -3,15 +3,25 @@ import Form from "../../ui/Form.jsx";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
 import {useForm} from "react-hook-form";
+import {useSignup} from "./useSignup.js";
 
 // Email regex: /\S+@\S+\.\S+/
 
 function SignupForm() {
-    const {register, formState, getValues, handleSubmit} = useForm()
+    const {signup, isLoading} = useSignup();
+    const {
+        register,
+        formState,
+        getValues,
+        handleSubmit,
+        reset
+    } = useForm()
     const {errors} = formState;
 
-    function onSubmit(data) {
-        console.log(data)
+    function onSubmit({fullName, email, password}) {
+        signup({fullName, email, password}, {
+            onSettled: reset
+        });
     }
 
     return (
