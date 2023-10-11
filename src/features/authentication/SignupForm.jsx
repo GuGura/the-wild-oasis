@@ -80,6 +80,7 @@ function SignupForm() {
                 {/* type is an HTML attribute! */}
                 <Button variation="secondary"
                         disabled={isLoading}
+                        onClick={reset}
                         type="reset">
                     Cancel
                 </Button>
