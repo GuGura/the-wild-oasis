@@ -56,7 +56,6 @@ export async function updateCurrentUser({password, fullName, avatar}) {
     if (fullName) updateDate = {data: {fullName}}
 
     const {data, error} = await supabase.auth.updateUser(updateDate)
-    console.log(error)
     if (error) throw new Error(error.message)
     if (!avatar) return;
     // 2. Upload the avatar image
