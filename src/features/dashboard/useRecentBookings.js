@@ -6,7 +6,7 @@ import {getBookingsAfterDate} from "../../services/apiBookings.js";
 export function useRecentBookings() {
     const [searchParams] = useSearchParams();
 
-    const numDays = !searchParams.get('last')
+    const numDays = searchParams.get('last')
         ? Number(searchParams.get('last'))
         : 7;
     const queryDate = subDays(new Date(), numDays).toISOString();

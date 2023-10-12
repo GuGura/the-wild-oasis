@@ -23,7 +23,6 @@ function DashboardLayout(props) {
     const {cabins, isLoading: isLoading3} = useCabins();
 
     if (isLoading1 || isLoading2 || isLoading3) return <Spinner/>
-
     return (
         <StyledDashboardLayout>
             <Stats bookings={bookings}
@@ -32,7 +31,8 @@ function DashboardLayout(props) {
                    confirmedStays={confirmedStays}/>
             <div>Today's activity</div>
             <div>Chart stay durations</div>
-            <SalesChart/>
+            <SalesChart bookings={bookings}
+                        numDays={numDays}/>
         </StyledDashboardLayout>
     );
 }
