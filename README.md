@@ -44,3 +44,8 @@ npm i react-hot-toast
 ```
  npm i react-hook-form
 ```
+
+### Recharts
+```
+npm i recharts
+```
