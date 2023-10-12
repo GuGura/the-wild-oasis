@@ -49,3 +49,8 @@ npm i react-hot-toast
 ```
 npm i recharts
 ```
+
+### React-error-boundary
+```
+npm install react-error-boundary
+```

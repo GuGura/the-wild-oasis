@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from "styled-components";
+import Heading from "./Heading.jsx";
 
 const StyledErrorFallback = styled.main`
   height: 100vh;
@@ -29,3 +31,15 @@ const Box = styled.div`
     color: var(--color-grey-500);
   }
 `;
+
+function ErrorFallback({error}) {
+    return (
+        <StyledErrorFallback>
+            <Box>
+                <Heading as='h1'>Something went wrong {error}</Heading>
+            </Box>
+        </StyledErrorFallback>
+    );
+}
+
+export default ErrorFallback;
