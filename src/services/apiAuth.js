@@ -36,7 +36,6 @@ export async function getCurrentUser() {
 
     // 2. If Exist getUser to Server (You must have JWT)
     const {data, error} = await supabase.auth.getUser();
-    console.log(data);
 
     if (error) {
         throw new Error(error.message)
