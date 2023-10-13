@@ -3,13 +3,12 @@ import Button from "../../ui/Button.jsx";
 import Form from "../../ui/Form.jsx";
 import Input from "../../ui/Input";
 import FormRowVertical from "../../ui/FormRowVertical";
-import {login} from "../../services/apiAuth.js";
 import {useLogin} from "./useLogin.js";
 import SpinnerMini from "../../ui/SpinnerMini.jsx";
 
 function LoginForm() {
-    const [email, setEmail] = useState("wodus331@example.com");
-    const [password, setPassword] = useState("123412341234");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const {login, isLoading} = useLogin()
 
     function handleSubmit(e) {
